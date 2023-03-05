@@ -15,7 +15,7 @@ void initialize_glut(void)
    glClearColor(255, 255, 255, 255); //cor de fundo da janela (branca)
    glMatrixMode(GL_PROJECTION); //matriz de projeção: GL_PROJECTION ou GL_MODELVIEW
    glLoadIdentity();
-   gluOrtho2D(0, 1, 0, 1); //Define as coordenadas do mundo -> gluOrtho2D(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top): Left é a coordenada x do limite esquerdo, right é x do limite direito, bottom é y do limite inferior, top é y do limite superior
+   gluOrtho2D(0, 100, 0, 100); //Define as coordenadas do mundo -> gluOrtho2D(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top): Left é a coordenada x do limite esquerdo, right é x do limite direito, bottom é y do limite inferior, top é y do limite superior
 }
 
 // Desenha o terreno
