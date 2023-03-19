@@ -129,6 +129,7 @@ void draw_terrain ()
    draw_place(pq3, p2);
    draw_place(pb1_1, pb1_2);
    draw_place(pb2_1, pb2_2);
+   draw_door()
 
     // Encerra o desenho do quadrado
    glFlush(); // Desenha os comandos pendentes na tela
@@ -136,10 +137,21 @@ void draw_terrain ()
    // output(0, 0, "Terreno");
 }
 
+
+void draw_door(point p1, point p2, double size, GLfloat color[3]){
+   glBegin(GL_QUADS); // Inicia o desenho de um quadrado
+   glColor3f(color[0], color[1], color[2]);
+   glVertex2f(p1.x, p1.y); // Define o primeiro ponto do quadrado
+   glVertex2f(p2.x, p1.y); // Define o segundo ponto do quadrado
+   glVertex2f(p2.x, p2.y); // Define o terceiro ponto do quadrado
+   glVertex2f(p1.x, p2.y);
+   glEnd();
+}
+
 void draw_place(point p1, point p2){
 
    glBegin(GL_QUADS); // Inicia o desenho de um quadrado
-   glColor3f(.5, .5, .5); // Define a cor do quadrado (branco)
+   glColor3f(.235, .235, .2901); // Define a cor do quadrado (branco)
    glVertex2f(p1.x, p1.y); // Define o primeiro ponto do quadrado
    glVertex2f(p2.x, p1.y); // Define o segundo ponto do quadrado
    glVertex2f(p2.x, p2.y); // Define o terceiro ponto do quadrado
@@ -147,7 +159,7 @@ void draw_place(point p1, point p2){
    glEnd();
 
    glBegin(GL_QUADS); // Inicia o desenho de um quadrado
-   glColor3f(1.0, 1.0, 1.0); // Define a cor do quadrado (branco)
+   glColor3f(0.65, 0.48, 0.38); // Define a cor do quadrado (branco)
    glVertex2f(p1.x + 0.2, p1.y + 0.2); // Define o primeiro ponto do quadrado
    glVertex2f(p2.x - 0.2, p1.y + 0.2); // Define o segundo ponto do quadrado
    glVertex2f(p2.x - 0.2, p2.y - 0.2); // Define o terceiro ponto do quadrado
