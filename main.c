@@ -8,10 +8,6 @@
 
 void resize(int width, int height);
 void initialize_glut(void);
-// void draw_terrain();
-// void draw_place(point p1, point p2);
-// void draw_door(point p1, point p2, GLfloat color[3]);
-// void draw_window(point p1, point p2, GLfloat color[3], int dupla, int vertical);
 void rotate(point p, int degrees);
 int verificaDimensoes(float comp, float larg);
 int verificaOrientacao(int orientacao);
@@ -50,7 +46,6 @@ int main(int argc, char** argv)
    glutInit(&argc, argv); //inicializar o GLUT
    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); // Define o modo de exibição da janela
    glutInitWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT); // Tamanho da janela
-   // glfwSetWindowSizeLimits(window, 0, 800, 0, 500);
    
    glutInitWindowPosition((glutGet(GLUT_SCREEN_WIDTH)-WINDOW_WIDTH)/2, (glutGet(GLUT_SCREEN_HEIGHT)-WINDOW_HEIGHT)/2); // Posição da janela na tela
    glutCreateWindow("Planta baixa de uma casa quadrada"); // Título da janela
@@ -89,7 +84,6 @@ int verificaOrientacao(int orientacao){
 void initialize_glut(void) 
 {
    glClearColor(0, 0, 0, 0); //cor de fundo da janela (preta)
-   // glClearColor(255.0f, 255.0f, 255.0f, 255.0f); // (preto)
    glMatrixMode(GL_MODELVIEW); //matriz de projeção: GL_PROJECTION ou GL_MODELVIEW
    glLoadIdentity();
    // SCALE * 2

@@ -1,5 +1,4 @@
-*
-!.gitignore
-!main.c
-!MAKEFILE
-!libs/*.c
+*.txt
+.vscode/
+main.exe
+libs/utilities_text.c
