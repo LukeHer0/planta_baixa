@@ -2,7 +2,7 @@
 
 ## Integrantes
 
-José Matheus Santana Alves
-Lucas Heron Santos Anchieta
-Rafael Luciano Lima da Silva
-Ruan Tenório de Melo
+* José Matheus Santana Alves
+* Lucas Heron Santos Anchieta
+* Rafael Luciano Lima da Silva
+* Ruan Tenório de Melo
