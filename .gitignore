@@ -1,4 +1,5 @@
 *
 !.gitignore
 !main.c
-!utilities.c
+!MAKEFILE
+!libs/*.c
